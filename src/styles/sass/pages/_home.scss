@@ -1,0 +1,85 @@
+@media (min-width: 768px) {
+  .d-md-flex {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.slider-main {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.slider-img {
+  padding: 5%;
+  display: block;
+  margin: auto;
+  max-width: 50%;
+  z-index: 1;
+}
+
+.slider-text {
+  padding: 5%;
+}
+
+
+body {
+  height: 100vh;
+  max-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+}
+
+.spinner {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 65%;
+  left: 17%;
+
+}
+
+svg {
+  padding: 0;
+  background: none;
+  -webkit-clip-path: circle(40% at 50% 50%);
+  clip-path: circle(40% at 50% 50%);
+
+  text {
+    font-size: 50px;
+    text-transform: uppercase;
+    animation: rotateIt 20s linear infinite;
+    transform-origin: center;
+
+    textPath {
+      fill: aliceblue;
+    }
+  }
+}
+
+@keyframes rotateIt {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.display-5 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.bg-image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../../assets/img/Signature_480x480.webp);
+}
+
+
+section {
+  width: 100vw;
+}

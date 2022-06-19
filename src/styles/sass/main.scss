@@ -1,0 +1,12 @@
+// Config
+@import "./config/variables";
+@import "./global/resets";
+
+// Global
+@import "./global/header";
+@import "./global/footer";
+
+// Pages
+@import "./pages/home";
+@import "./pages/our_story";
+@import "./pages/mountain_grown_coffee";

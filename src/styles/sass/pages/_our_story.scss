@@ -1,0 +1,40 @@
+.slider-main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.signature-img {
+    max-width: 100%;
+}
+
+.slider-text {
+    padding: 5%;
+}
+
+.round-img {
+    border-radius: 100%;
+    max-width: 28%;
+}
+
+@media (max-width: 1024px) {
+    .round_img {
+        max-width: 20%;
+    }
+}
+
+.vr {
+    display: inline;
+    height: auto;
+    width: 1px;
+    border: 1px inset;
+}
+
+@media (max-width: 576px) {
+    .vr {
+        display: none;
+    }
+}
+
+.sp_container {
+    width: 50vw;
+}

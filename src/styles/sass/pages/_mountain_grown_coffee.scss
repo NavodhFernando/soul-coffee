@@ -1,0 +1,14 @@
+.sp_container {
+    width: 50vw;
+}
+
+.z1 {
+    z-index: -10;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.z2 {
+    z-index: 20;
+}
