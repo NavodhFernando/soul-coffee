@@ -16,7 +16,7 @@
   display: block;
   margin: auto;
   max-width: 50%;
-  z-index: 1;
+  z-index: 100;
 }
 
 .slider-text {
@@ -37,6 +37,7 @@ body {
   width: 200px;
   top: 65%;
   left: 17%;
+  z-index: 10;
 
 }
 
@@ -73,13 +74,45 @@ svg {
   margin-bottom: 1rem;
 }
 
-.bg-image {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../../../assets/img/Signature_480x480.webp);
+.z1 {
+  z-index: -10;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
+.z2 {
+  z-index: 20;
+}
+
+.bg-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  width: 100vw;
+  height: 100vh;
+}
 
 section {
   width: 100vw;
+}
+
+.bg-slide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
 }

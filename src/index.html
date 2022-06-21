@@ -12,7 +12,8 @@
     <title>Hello, world!</title>
 </head>
 
-<body class="">
+<body class="bg-dark">
+
     <nav class="navbar navbar-expand-lg navbar-dark navbar-inner navbar-size">
         <div class="container">
             <a href="./index.html" class="navbar-brand">
@@ -68,13 +69,10 @@
                 </svg>
             </div>
             <div class="swiper-wrapper">
-                <div class="swiper-slide ">
-                    <div class="bg-image">
-                        <img class="img-fluid w-75 mx-auto d-block" src="./assets/img/bottle pics/all bottles.png"
-                            alt="">
-                    </div>
+                <div class="swiper-slide" id="1">
+                    <img class="img-fluid w-75 mx-auto d-block" src="./assets/img/bottle pics/all bottles.png" alt="">
                 </div>
-                <div class="swiper-slide d-md-flex slider-main bg-image">
+                <div class="swiper-slide d-md-flex slider-main" id="2">
                     <img class=" img-fluid slider-img" src="./assets/img/bottle pics/black cold brew.png" alt="">
 
                     <div class="slider-text">
@@ -83,7 +81,7 @@
                             process to create a bold and balanced taste</p>
                     </div>
                 </div>
-                <div class="swiper-slide d-md-flex slider-main">
+                <div class="swiper-slide d-md-flex slider-main" id="3">
                     <img class=" img-fluid slider-img" src="./assets/img/Chocolate.png" alt="">
                     <div class="slider-text">
                         <h1 class="display-5">Chocolate Cold Brew</h1>
@@ -92,7 +90,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="swiper-slide d-md-flex slider-main">
+                <div class="swiper-slide d-md-flex slider-main" id="4">
                     <img class=" img-fluid slider-img" src="./assets/img/hazelnut.png" alt="">
                     <div class="slider-text">
                         <h1 class="display-5">Hazelnut Cold Brew</h1>
@@ -101,7 +99,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="swiper-slide d-md-flex slider-main">
+                <div class="swiper-slide d-md-flex slider-main" id="slider_5">
                     <img class=" img-fluid slider-img" src="./assets/img/latte.png" alt="">
                     <div class="slider-text">
                         <h1 class="display-5">Latte Cold Brew</h1>
@@ -115,7 +113,7 @@
 
     <div class="container-fluid p-0">
 
-        <footer class="text-center text-lg-start bg-dark footer-size">
+        <footer class="text-center text-lg-start footer-size">
             <div class="container d-flex justify-content-center">
                 <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
                     <i class="fab fa-facebook-f"></i>
@@ -138,6 +136,13 @@
         </footer>
     </div>
 
+    <div class="bg-slide">
+        <img src="./assets/img/bottle-pics/main-bak.jpg" alt="" id="bg_1">
+        <img src="./assets/img/bottle-pics/black-bak.jpg" alt="" id="bg_2">
+        <img src="./assets/img/bottle-pics/chocolate-bak.jpg" alt="" id="bg_3">
+        <img src="./assets/img/bottle-pics/hazelnut-bak.jpg" alt="" id="bg_4">
+        <img src="./assets/img/bottle-pics/latte-bak.jpg" alt="" id="bg_5">
+    </div>
 
     <script type="module" src="./scripts/main.js"></script>
 </body>
