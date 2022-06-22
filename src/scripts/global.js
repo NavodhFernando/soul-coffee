@@ -9,22 +9,19 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-//Slider-Image-Navigation
-function handleslider() {
-  let activeslide = document.querySelector(".swiper-slide-active");
-  console.log(activeslide.id)
+// Initial render
+document.querySelector(`#bg_${swiper.activeIndex}`).style.opacity = 1;
 
-  let bgimages = document.querySelector(`#bg_${activeslide.id}`);
-  console.log(bgimages)
+// On Slider Update
+swiper.on("slideChange", function () {
+  let prevSlide = document.querySelector(`#bg_${swiper.previousIndex}`);
+  let activelide = document.querySelector(`#bg_${swiper.activeIndex}`);
 
-  bgimages.style.opacity = 1;
-}
+  prevSlide.style.transition = "opacity 1s ease";
+  prevSlide.style.transitionDelay = "500ms";
 
-// swiper.on('beforeInit', function () {
-//   handleslider();
-// });
-handleslider(0);
-swiper.on('slideChange', function () {
-  handleslider(1);
+  activelide.style.opacity = 1;
+  prevSlide.style.opacity = 0;
+  activelide.style.transition = "opacity 1s ease";
 });
 

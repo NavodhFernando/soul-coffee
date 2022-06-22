@@ -12,16 +12,22 @@
 }
 
 .slider-img {
-  padding: 5%;
   display: block;
   margin: auto;
   max-width: 50%;
   z-index: 100;
 }
 
+@media (min-width: 768px) {
+  .slider-img {
+    max-width: 35%;
+  }
+}
+
 .slider-text {
   padding: 5%;
 }
+
 
 
 body {
@@ -35,9 +41,9 @@ body {
   position: absolute;
   height: 200px;
   width: 200px;
-  top: 65%;
+  top: 62%;
   left: 17%;
-  z-index: 10;
+  z-index: 1;
 
 }
 
