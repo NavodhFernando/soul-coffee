@@ -1,1 +1,35 @@
-$primary-color: red;
+@font-face {
+    font-family: 'Proxima-nova-bold';
+    src: url('/src/assets/Fonts/Proxima\ Nova\ Bold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Proxima-nova';
+    src: url('/src/assets/Fonts/ProximaNova-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Ivy-regular';
+    src: url('/src/assets/Fonts/IvyMode-Regular.ttf') format("truetype");
+}
+
+
+.display-5,
+.display-2 {
+    font-family: 'Ivy-regular';
+}
+
+
+p {
+    font-family: "Proxima-nova";
+}
+
+
+
+.nav-font {
+    font-family: "Proxima-nova-bold";
+}
+
+.button-font {
+    font-family: "Ivy-regular";
+}

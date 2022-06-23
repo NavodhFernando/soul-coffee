@@ -26,13 +26,13 @@ swiper.on("slideChange", function () {
 
   if (swiper.activeIndex == 0) {
     document.querySelector(".spinner").style.opacity = 0;
+    document.querySelector(".spinner").style.visibility = "hidden";
   }
   else {
     document.querySelector(".spinner").style.opacity = 1;
+    document.querySelector(".spinner").style.visibility = "visible";
   }
 
 });
-
-//hide spinner on main-slide
 
 
