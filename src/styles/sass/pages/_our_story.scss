@@ -38,3 +38,10 @@
 .sp_container {
     width: 50vw;
 }
+
+body {
+    height: 100vh;
+    max-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+}

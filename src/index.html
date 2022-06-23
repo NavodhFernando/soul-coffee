@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="./styles/main.css">
 
+
+
     <title>Soul Coffee - Cold Brew Coffee</title>
 </head>
 
@@ -19,7 +21,7 @@
             <a href="./index.html" class="navbar-brand">
                 <img class="img-fluid" src="./assets/img/SoulCoffeeLogoV3_5_1000x1000.webp" alt="">
             </a>
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon ms-auto"></span>
             </button>
             <div class="collapse navbar-collapse" id="navmenu">
@@ -52,7 +54,7 @@
     </nav>
 
     <!--Cold Brew Coffee Centerpiece-->
-    <section class="text-light text-center text-md-start p-2 pt-0">
+    <section class="text-light text-center text-sm-start p-2 pt-0">
 
         <!-- Swiper -->
         <div class="swiper mySwiper top-50 start-50 translate-middle">
@@ -69,11 +71,11 @@
                 </svg>
             </div>
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide slider-main" id="main">
                     <img class="img-fluid w-75 mx-auto pb-5 mb-5 d-block" src="./assets/img/bottle-pics/all-bottles.png"
                         alt="">
                 </div>
-                <div class="swiper-slide d-md-flex slider-main align-middle">
+                <div class="swiper-slide d-sm-flex slider-main align-middle">
                     <img class=" img-fluid slider-img" src="./assets/img/bottle-pics/black-cold-brew.png" alt="">
 
                     <div class="slider-text">
@@ -82,7 +84,7 @@
                             process to create a bold and balanced taste</p>
                     </div>
                 </div>
-                <div class="swiper-slide d-md-flex slider-main">
+                <div class="swiper-slide d-sm-flex slider-main">
                     <img class=" img-fluid slider-img" src="./assets/img/bottle-pics/hazelnut-cold-brew.png" alt="">
                     <div class="slider-text">
                         <h1 class="display-5">Hazelnut Cold Brew</h1>
@@ -91,7 +93,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="swiper-slide d-md-flex slider-main">
+                <div class="swiper-slide d-sm-flex slider-main">
                     <img class=" img-fluid slider-img" src="./assets/img/bottle-pics/chocolate-cold-brew.png" alt="">
                     <div class="slider-text">
                         <h1 class="display-5">Chocolate Cold Brew</h1>
@@ -100,7 +102,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="swiper-slide d-md-flex slider-main">
+                <div class="swiper-slide d-sm-flex slider-main">
                     <img class=" img-fluid slider-img" src="./assets/img/bottle-pics/latte-cold-brew.png" alt="">
                     <div class="slider-text">
                         <h1 class="display-5">Latte Cold Brew</h1>
@@ -116,18 +118,23 @@
 
         <footer class="text-center text-lg-start footer-size">
             <div class="container d-flex justify-content-center">
-                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
+
+                <a href="https://www.facebook.com/SoulCoffeeLK/" target="_blank" type="button"
+                    class="btn btn-lg btn-floating mx-2">
                     <i class="fab fa-facebook-f"></i>
-                </button>
-                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
+                </a>
+                <a href="https://www.youtube.com/channel/UCoLE1HSlP0mDw7eJxD5HWVQ" target="_blank" type="button"
+                    class="btn btn-lg btn-floating mx-2">
                     <i class="fab fa-youtube"></i>
-                </button>
-                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
+                </a>
+                <a href="https://www.instagram.com/soulcoffeelk/?hl=en" target="_blank" type="button"
+                    class="btn btn-lg btn-floating mx-2">
                     <i class="fab fa-instagram"></i>
-                </button>
-                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
-                    <i class="fab fa-twitter"></i>
-                </button>
+                </a>
+                <a href="https://www.tiktok.com/@soulcoffeelk" target="_blank" type="button"
+                    class="btn btn-lg btn-floating mx-2">
+                    <i class="fab fa-tiktok"></i>
+                </a>
             </div>
 
             <!-- Copyright -->

@@ -1,6 +1,7 @@
 /* Libs */
 @import "../lib/bootstrap/bootstrap.min.css";
 @import "../lib/swiper/swiper-bundle.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css";
 
 /* Compiled styles */
 @import "./dist/main.css";

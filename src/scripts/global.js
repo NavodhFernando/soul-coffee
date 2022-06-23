@@ -23,5 +23,16 @@ swiper.on("slideChange", function () {
   activelide.style.opacity = 1;
   prevSlide.style.opacity = 0;
   activelide.style.transition = "opacity 1s ease";
+
+  if (swiper.activeIndex == 0) {
+    document.querySelector(".spinner").style.opacity = 0;
+  }
+  else {
+    document.querySelector(".spinner").style.opacity = 1;
+  }
+
 });
+
+//hide spinner on main-slide
+
 

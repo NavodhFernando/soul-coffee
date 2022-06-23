@@ -1,5 +1,5 @@
-@media (min-width: 768px) {
-  .d-md-flex {
+@media (min-width: 576px) {
+  .d-sm-flex {
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -14,20 +14,31 @@
 .slider-img {
   display: block;
   margin: auto;
-  max-width: 50%;
+  width: 45%;
   z-index: 100;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 575px) {
   .slider-img {
-    max-width: 35%;
+    width: 35%;
+  }
+}
+
+@media (min-width: 576px) {
+  .slider-img {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider-img {
+    width: 27%;
   }
 }
 
 .slider-text {
   padding: 5%;
 }
-
 
 
 body {
@@ -44,6 +55,8 @@ body {
   top: 62%;
   left: 17%;
   z-index: 1;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 
 }
 
@@ -76,7 +89,7 @@ svg {
 }
 
 .display-5 {
-  margin-top: 3rem;
+
   margin-bottom: 1rem;
 }
 
