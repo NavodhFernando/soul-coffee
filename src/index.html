@@ -16,7 +16,7 @@
 
 <body class="bg-dark">
 
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-inner navbar-size">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-inner navbar-size">
         <div class="container">
             <a href="./index.html" class="navbar-brand">
                 <img class="img-fluid" src="./assets/img/SoulCoffeeLogoV3_5_1000x1000.webp" alt="">
@@ -45,7 +45,7 @@
                 <ul class="navbar-nav">
                     <li class="navbar-item">
                         <a href="https://www.soulcoffee.lk/collections/all/cold-brew" class="nav-link">
-                            <button type="button" class="btn btn-outline-secondary">Buy Now</button>
+                            <button type="button" class="btn btn-outline-dark">Buy Now</button>
                         </a>
                     </li>
                 </ul>
@@ -71,11 +71,15 @@
                 </svg>
             </div>
             <div class="swiper-wrapper">
-                <div class="swiper-slide slider-main" id="main">
-                    <img class="img-fluid w-75 mx-auto pb-5 mb-5 d-block" src="./assets/img/bottle-pics/all-bottles.png"
-                        alt="">
+                <div class="swiper-slide flex-column" id="main">
+                    <img class="img-fluid main-w mx-auto d-block" src="./assets/img/bottle-pics/all-bottles.png" alt="">
+                    <div class="text-center slider-main">
+                        <h1 class="display-5">Cold Brew Coffee</h1>
+                        <p class="lead">Nothing like a cold brew coffee on a hot day, a delicious and refreshing drink.
+                            Our Smooth Ceylon Medium Roast blend is an ideal choice for it.</p>
+                    </div>
                 </div>
-                <div class="swiper-slide d-sm-flex slider-main align-middle">
+                <div class="swiper-slide d-sm-flex slider-main">
                     <img class=" img-fluid slider-img" src="./assets/img/bottle-pics/black-cold-brew.png" alt="">
 
                     <div class="slider-text">
