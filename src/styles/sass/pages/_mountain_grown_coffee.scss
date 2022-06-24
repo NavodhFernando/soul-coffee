@@ -43,3 +43,20 @@ body {
     width: 100vw;
     height: 40vh;
 }
+
+@media (max-width: 576px) {
+    .banner-img {
+        width: 100vw;
+        height: 20vh;
+    }
+}
+
+.align_self_center {
+    align-self: unset;
+}
+
+@media (max-width: 576px) {
+    .align_self_center {
+        align-self: center !important;
+    }
+}

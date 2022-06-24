@@ -55,8 +55,16 @@
 
 
 .sp_container {
-    width: 50vw;
+    width: 40vw;
 }
+
+@media (max-width: 576px) {
+    .sp_container {
+        width: 100vw;
+    }
+}
+
+
 
 body {
     height: 100vh;
